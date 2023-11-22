@@ -29,3 +29,10 @@ Call the regress method
 ```java
 regressor.regress(3);
 ```
+
+Check whether there are potential formulas
+```java
+System.out.println(regressor.getPotentialFormulas());
+```
+Results:
+> [(AccountsReceivable*Days)/NetCreditSales))=DaysSalesOutstanding, (Days*AccountsReceivable)/NetCreditSales))=DaysSalesOutstanding]
