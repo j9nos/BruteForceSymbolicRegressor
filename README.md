@@ -35,4 +35,6 @@ Check whether there are potential formulas
 System.out.println(regressor.getPotentialFormulas());
 ```
 Results:
-> [(AccountsReceivable*Days)/NetCreditSales))=DaysSalesOutstanding, (Days*AccountsReceivable)/NetCreditSales))=DaysSalesOutstanding]
+```
+[(AccountsReceivable*Days)/NetCreditSales))=DaysSalesOutstanding, (Days*AccountsReceivable)/NetCreditSales))=DaysSalesOutstanding]
+```
