@@ -11,7 +11,7 @@ public final class Main {
     public static void main(final String[] args) {
         final Variable output = new Variable("68.81180767", "DaysSalesOutstanding");
 
-        final Variable[] input = {
+        final Variable[] inputs = {
                 new Variable("258998", "AccountsReceivable"),
                 new Variable("993659", "NetCreditSales"),
                 new Variable("264", "Days"),
@@ -19,7 +19,7 @@ public final class Main {
                 new Variable("0", "IrrelevantData2")
         };
 
-        final BruteForceSymbolicRegressor regressor = new BruteForceSymbolicRegressor(output, input);
+        final BruteForceSymbolicRegressor regressor = new BruteForceSymbolicRegressor(output, inputs);
         regressor.regress(3);
 
         System.out.println(regressor.getPotentialFormulas());
